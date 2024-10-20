@@ -1,0 +1,47 @@
+READ ME
+
+Predictors of Work-Life Balance For Men 
+github: https://github.com/jbaxterusd/AAI-500-AliBaxter-FinalProject/tree/main
+
+This project is part of the AAI-500 Course in the Applied Artificial Intelligence Program at the University of San Diego (USD)
+--Project Status: [Completed]
+
+Intro/Objective: 
+The main purpose of this project is to predict and analyze work life balance scores for men based on survey data. Specifically, our project aims to identify the most influential variables in the work life balance calculation, with emphasis on the identification of the 5 top variables. With this information, we are able to better understand which variables (ex. # fruits and vegetables consumed, adequate income, stress levels) are most important in creating an ideal work-life balance. 
+
+Our project also aims to utilize a random forest prediction model to further analyze the work-life balance score and gain greater insight on the score through machine learning. By training a random forest, we are able to practice a variety of concepts covered in our course, such as bootstrapping, sample/training data selection, p-value significance and correlation/causation evaluation. With our data, we hope to better apply the foundation of higher work life balance score in our lives, and further the ongoing discussion about men's health in our communities. 
+
+Partners/Contributors: 
+- Hassan Ali (8019177807, hali@sandiego.edu)
+- Jack Baxter (8585314334, jackbaxter@sandiego.edu)
+
+Methods Used: 
+- Regression analysis 
+- Random Forest
+- Inferential Statistics 
+- Machine Learning
+- Data Visualization 
+- Ethics for AI
+- Data Preprocessing / Cleaning
+- Bootstrapping, Train/Test Data Sampling
+
+Technologies: 
+- Python
+- Jupyter Notebook
+- Graphviz 
+
+Project Description: 
+
+For our project, the Lifestyle_and_Wellbeing Dataset from Kaggle.com was utilized, containing 6114 survey entrties for men's health in relation to work life balance scores. With 24 total varibles, our set included a comprehensive summary of men's health as it relates to the work-life-balance score also included for each entry in the set. wellbeing_and_lifestyle(fruits_veggies, daily_stress, places_visited, core_circle, supporting_others, social_network, achievement, donation, bmi_range, todo_completed, flow, daily_steps, live_vision, sleep_hours, lost_vacation, daily_shouting, sufficient_income, personal_awards, time_for_passion, weekly_meditation, age, gender, work_life_balance_score). All variables are integers, 0-10 scale with the exception of age, gender, and work life balance score. 
+
+Data was cleaned and filtered for only male entries. We hypothesized that variables flow, hours of meditation and income would have the highest influence on the work life balance score, and wanted to further explore which variables were of most importance in the overall score as the kaggle site did not outline how the final WLB score was calculated. 
+
+First, a regression analysis was performed on the data to gain better insight for the variables that had the highest correlation with work life balance under a potential linear relationship. We chose this mode of analysis as it could provide us with basic exploratory data and potential leads to the overall findings. Linear regression is also the mode of analysis we are most familiar with. To better understand the data we also created histograms and boxplots to screen for potential outliers or anomalies in the data itself.
+
+Next a random forest predictor was created utilizing bootstrapped data from the set. The data was boostrapped using non-parametric methods as we could not assume anything about the distribution of our data. With the random forest created, we now had a prediction model for the data, and were able to test our model. With a low MSE and high correlation value for the prediction model, we were satisfied with the training. From the forest, we garnered the variables of highest influence. 
+
+A linear regression analysis was performed on the data to confirm variables of high influence (variable vs work life balance score). Descriptive summaries and boxplots were generated to garner further insights on the data. Challenges included identification of data distribution as multiple variables are included and could be correlated with each other. Other challenges include how to conduct further research on the matter given the identified variables, apart from summarizing and making conclusions on trends. 
+
+Aknowledgements: 
+
+Thank you to our professor, Leonid Spaner for his continued support and guidance. Thank you to the MS AAI program at USD for the opportunity and curriculum to perform the project. 
